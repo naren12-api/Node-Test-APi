@@ -1,0 +1,38 @@
+{
+    "__type": "ApplyConversationActionJsonRequest:#Exchange",
+    "Header": {
+        "__type": "JsonRequestHeaders:#Exchange",
+        "RequestServerVersion": "V2018_01_08",
+        "TimeZoneContext": {
+            "__type": "TimeZoneContext:#Exchange",
+            "TimeZoneDefinition": {
+                "__type": "TimeZoneDefinitionType:#Exchange",
+                "Id": "UTC"
+            }
+        }
+    },
+    "Body": {
+        "__type": "ApplyConversationActionRequest:#Exchange",
+        "ConversationActions": [
+            {
+                "__type": "ConversationAction:#Exchange",
+                "Action": "Delete",
+                "ConversationId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": "AQQkADAwATM3ZmYAZS0yNDljLTE3YmIALTAwAi0wMAoAEAB3SppbycBUQ4AVJEm4AoLu"
+                },
+                "DeleteType": "SoftDelete",
+                "ConversationLastSyncTime": "2022-09-24T09:01:29.000Z",
+                "SuppressReadReceipts": true,
+                "ContextFolderId": {
+                    "__type": "TargetFolderId:#Exchange",
+                    "BaseFolderId": {
+                        "__type": "FolderId:#Exchange",
+                        "Id": "AQMkADAwATM3ZmYAZS0yNDljLTE3YmIALTAwAi0wMAoALgAAAwnRer/eZjZBjmY5EMUoM0MBAC2svI4z/YRKsBSP3F0w8zgAAAIBCgAAAA=="
+                    }
+                }
+            }
+        ],
+        "ReturnMovedItemIds": false
+    }
+}

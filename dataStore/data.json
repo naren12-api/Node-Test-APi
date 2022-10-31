@@ -1,0 +1,84 @@
+{
+  "__type": "CreateItemJsonRequest:#Exchange",
+  "Header": {
+    "__type": "JsonRequestHeaders:#Exchange",
+    "RequestServerVersion": "V2018_01_08",
+    "TimeZoneContext": {
+      "__type": "TimeZoneContext:#Exchange",
+      "TimeZoneDefinition": {
+        "__type": "TimeZoneDefinitionType:#Exchange",
+        "Id": "India Standard Time"
+      }
+    }
+  },
+  "Body": {
+    "__type": "CreateItemRequest:#Exchange",
+    "ClientSupportsIrm": true,
+    "ComposeOperation": "newMail",
+    "MessageDisposition": "SendAndSaveCopy",
+    "Items": [
+      {
+        "__type": "Message:#Exchange",
+        "Subject": "dasdasdas",
+        "Importance": "Normal",
+        "IsReadReceiptRequested": false,
+        "IsDeliveryReceiptRequested": false,
+        "ToRecipients": [
+          {
+            "EmailAddress": "faruq.khan7003@gmail.com",
+            "Name": "faruq.khan7003@gmail.com",
+            "MailboxType": "ExternalMailbox",
+            "RoutingType": "SMTP"
+          }
+        ],
+        "CcRecipients": [],
+        "BccRecipients": [],
+        "Sensitivity": "Normal",
+        "Body": {
+          "__type": "BodyContentType:#Exchange",
+          "BodyType": "HTML",
+          "Value": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><style type=\"text/css\" style=\"display:none;\"> P {margin-top:0;margin-bottom:0;} </style></head><body dir=\"ltr\"><div style=\"font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\" class=\"elementToProof\">dasdadasdasda</div></body></html>",
+          "DataUriCount": 0
+        },
+        "From": {
+          "__type": "SingleRecipientType:#Exchange",
+          "Mailbox": {
+            "MailboxType": "Mailbox",
+            "RoutingType": "SMTP",
+            "EmailAddress": "narendrachauhan@outlook.com",
+            "Name": "Narendra Chauhan"
+          }
+        },
+        "ExtendedProperty": [
+          {
+            "__type": "ExtendedPropertyType:#Exchange",
+            "ExtendedFieldURI": {
+              "__type": "ExtendedPropertyUri:#Exchange",
+              "PropertyName": "suggested_attachment_session_id",
+              "DistinguishedPropertySetId": "InternetHeaders",
+              "PropertyType": "String"
+            },
+            "Value": "ee183b44-85a4-55b3-3bc0-509615278b90"
+          }
+        ],
+        "ShouldIgnoreChangeKey": false
+      }
+    ],
+    "TimeFormat": "h:mm tt",
+    "SendOnNotFoundError": true,
+    "RemoteExecute": false, 
+    "ItemShape": {
+      "__type": "ItemResponseShape:#Exchange",
+      "BaseShape": "IdOnly",
+      "AdditionalProperties": [
+        {
+          "__type": "PropertyUri:#Exchange",
+          "FieldURI": "ItemLastModifiedTime"
+        }
+      ]
+    },
+    "OutboundCharset": "AutoDetect",
+    "UseGB18030": false,
+    "UseISO885915": false
+  }
+}
